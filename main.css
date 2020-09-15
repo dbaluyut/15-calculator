@@ -1,0 +1,37 @@
+* {
+  font-family: helvetica;
+}
+
+#answerBox {
+  width: 12rem;
+  height: 4rem;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#calc {
+  padding: 50% auto;
+}
+
+input {
+  height: 4rem;
+  font-size: 2rem;
+  width: 8rem;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 5px;
+}

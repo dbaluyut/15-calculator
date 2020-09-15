@@ -4,19 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=0, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <form action="">
-      <input type="text" id="val1" />
-      <input type="text" id="val2" />
-      <button id="add">add</button>
-      <button id="subtract">subtract</button>
-      <button id="multiply">multiply</button>
-      <button id="divide">divide</button>
-      <button id="clear" type="reset">clear</button>
-    </form>
-    <h2 id="answer">answer here</h2>
+    <div id="calc">
+      <div class="container">
+        <div id="answerBox">
+          <h2 id="answer">answer here</h2>
+        </div>
+      </div>
 
+      <form action="" id="form">
+        <input type="text" id="val1" />
+        <button id="add">add</button>
+        <button id="subtract">subtract</button>
+        <button id="multiply">multiply</button>
+        <button id="divide">divide</button>
+        <button id="clear" type="reset">clear</button>
+        <input type="text" id="val2" />
+      </form>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

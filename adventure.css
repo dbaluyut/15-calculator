@@ -1,0 +1,47 @@
+/* #calc {
+  width: 20rem;
+  height: 25rem;
+  background-color: aqua;
+} */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid {
+  width: 20rem;
+  height: 25rem;
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "clear     input1   input1    input1"
+    "btn7       btn8     btn9       btnDivide"
+    "btn4       btn5     btn6       btnTimes"
+    "btn1       btn2     btn3       btnMinus"
+    "btn0      btnDot  btnEquals btnPlus";
+  grid-gap: 2px;
+}
+
+clear {
+  grid-area: clear;
+}
+
+#input1 {
+  grid-area: input1;
+}
+
+.btn {
+  background-color: aqua;
+  font-size: 30px;
+}
+.btn:hover {
+  background-color: red;
+}
+
+* {
+  font-family: helvetica;
+}

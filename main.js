@@ -12,6 +12,8 @@ const val2 = document.getElementById("val2")
 
 const answer = document.getElementById("answer")
 
+const clearBtn = document.getElementById("clear")
+
 addBtn.addEventListener("click", function (e) {
   e.preventDefault()
   return (answer.innerHTML = add(Number(val1.value), Number(val2.value)))
@@ -30,6 +32,10 @@ divideBtn.addEventListener("click", function (e) {
 subtractBtn.addEventListener("click", function (e) {
   e.preventDefault()
   return (answer.innerHTML = subtract(Number(val1.value), Number(val2.value)))
+})
+
+clearBtn.addEventListener("click", function (e) {
+  document.getElementById("answer").innerHTML = "answer here"
 })
 
 function add(a, b) {
